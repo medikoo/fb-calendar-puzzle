@@ -4,7 +4,7 @@ Task I was once (November 2011) asked to do when applying for position at Facebo
 
 ----
 
-To see it working, download code and in browser open `public/index.html` file.
+To see it working, download code and in browser open `public/index.html` file, or just access: http://medyk.org/facebook-calendar-puzzle/
 
 Few notes:  
 Code consists of few simple modules placed in separate files in lib folder (Node.js style) that are bundled for browser with [Webmake](with https://github.com/medikoo/modules-webmake). Generated bundle that's loaded in browser is `public/program.js`.
