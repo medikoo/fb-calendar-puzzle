@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+<link rel="stylesheet" href="style.css" />
+
+<ul class="nav">
+	<li><a href="index.html">Main</a></li>
+	<li><a href="layout-2.html">Layout #2</a></li>
+	<li><a href="layout-3.html">Layout #3</a></li>
+	<li><a href="layout-4.html">Layout #4</a></li>
+	<li><a href="layout-5.html">Layout #5</a></li>
+</ul>
+
+<div id="main" class="day"></div>
+
+<script src="program.js"></script>
+<script>
+	LAYOUT(document.getElementById('main'), [
+		{ id: 1, start: 30,  end: 150 }, // 09:30 -> 11:30
+		{ id: 2, start: 540, end: 600 }, // 18:00 -> 19:00
+		{ id: 3, start: 560, end: 620 }, // 18:20 -> 19:20
+		{ id: 4, start: 610, end: 670 }  // 19:10 -> 20:10
+	]);
+</script>

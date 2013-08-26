@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; }
+body {
+	font: 11px/1.28 "lucida grande", tahoma, verdana, arial, sans-serif; }
+
+a { color: #3b5998; font-weight: bold; text-decoration: none; }
+a:hover, a:active, a:focus { text-decoration: underline; }
+
+ul.nav { margin: 10px; text-align: center; width: 720px; }
+ul.nav li { display: inline; margin: 0 10px; }
+
+div.day { width: 720px; position: relative;  }
+div.day ul {
+	display: inline-block;
+	list-style: none; vertical-align: top; }
+div.day ul.legend {
+	width: 90px; padding-right: 10px; color: #aaa; font-size: 9px; }
+div.day ul.legend li { height: 30px; line-height: 30px; text-align: right; }
+div.day ul.legend span.hour {
+	font-size: 12px; font-weight: bold; margin-right: 2px; color: gray; }
+div.day ul.events {
+	position: relative; top: 15px; width: 600px; height: 720px; padding: 0 10px;
+	background: #ececec; font-weight: bold; }
+div.day ul.events li {
+	position: absolute; background: white; color: #3b5998; }
+div.day ul.events div.deco {
+	height: 100%; border: 1px solid #d5d5d5; border-left: 4px solid #3b5998; }
+div.day ul.events p { margin: 8px; }
+div.day div.comment {
+	position: absolute; bottom: 100px; left: 120px; right: 20px; z-index: 1;
+	background: white; border:1px solid #ccc;
+	opacity: 0.9; color: #444; font-style: italic; }
+div.day div.comment p { margin: 10px; }
+
+/* IE 6-7 */
+div.day ul { *display: inline; }
+div.day ul.legend, div.day ul.events { zoom: 1; }
+div.day div.comment { filter: alpha(opacity=90); }

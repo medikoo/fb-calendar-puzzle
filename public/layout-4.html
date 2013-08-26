@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+<link rel="stylesheet" href="style.css" />
+
+<ul class="nav">
+	<li><a href="index.html">Main</a></li>
+	<li><a href="layout-2.html">Layout #2</a></li>
+	<li><a href="layout-3.html">Layout #3</a></li>
+	<li><a href="layout-4.html">Layout #4</a></li>
+	<li><a href="layout-5.html">Layout #5</a></li>
+</ul>
+
+<div id="main" class="day"></div>
+
+<script src="program.js"></script>
+<script>
+	LAYOUT(document.getElementById('main'), [
+		{ id: 1, start: 60, end: 120 },
+		{ id: 2, start: 90, end: 600 },
+
+		{ id: 3, start: 150, end: 300 },
+		{ id: 4, start: 250, end: 650 },
+
+		{ id: 5, start: 500, end: 650 },
+		{ id: 6, start: 530, end: 590 }
+	]);
+</script>

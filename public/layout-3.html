@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+<link rel="stylesheet" href="style.css" />
+
+<ul class="nav">
+	<li><a href="index.html">Main</a></li>
+	<li><a href="layout-2.html">Layout #2</a></li>
+	<li><a href="layout-3.html">Layout #3</a></li>
+	<li><a href="layout-4.html">Layout #4</a></li>
+	<li><a href="layout-5.html">Layout #5</a></li>
+</ul>
+
+<div id="main" class="day">
+	<div class="comment">
+		<p>This could be packed bit better with more sophisticated packing
+			algorithm. In this case Event #3 could be moved to the right, so #5 with
+			#6 could be wider, I didn't work on that as I assumed you didn't
+			expect such solution (width of #5, #6 and #3 wouldn't be equal then).</p>
+	</div>
+</div>
+
+<script src="program.js"></script>
+<script>
+	LAYOUT(document.getElementById('main'), [
+		{ id: 1, start: 30,  end: 300 },
+		{ id: 2, start: 50,  end: 100 },
+		{ id: 3, start: 70,  end: 500 },
+		{ id: 4, start: 90,  end: 150 },
+		{ id: 5, start: 320, end: 450 },
+		{ id: 6, start: 350, end: 470 }
+	]);
+</script>

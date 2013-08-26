@@ -1,0 +1,11 @@
+{
+  "name": "facebook-puzzle",
+  "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "private": true,
+  "scripts": {
+    "test": "node node_modules/tad/bin/tad -a lib/lay-out-day.js"
+  },
+  "devDependencies": {
+    "tad": "0.1.x"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+<link rel="stylesheet" href="style.css" />
+
+<ul class="nav">
+	<li><a href="index.html">Main</a></li>
+	<li><a href="layout-2.html">Layout #2</a></li>
+	<li><a href="layout-3.html">Layout #3</a></li>
+	<li><a href="layout-4.html">Layout #4</a></li>
+	<li><a href="layout-5.html">Layout #5</a></li>
+</ul>
+
+<div id="main" class="day"></div>
+
+<script src="program.js"></script>
+<script>
+	LAYOUT(document.getElementById('main'), [
+		// 4 uneven
+		{ id: 1, start: 10, end: 90 },
+		{ id: 2, start: 20, end: 80 },
+		{ id: 3, start: 70, end: 180 },
+		{ id: 4, start: 90, end: 180 },
+
+		// 2 colliding
+		{ id: 5, start: 200, end: 270 },
+		{ id: 6, start: 230, end: 290 },
+
+		// 1
+		{ id: 7, start: 300, end: 340 },
+
+		// 6 uneven
+		{ id: 8, start: 350, end: 400 },
+		{ id: 9, start: 370, end: 580 },
+
+		{ id: 10, start: 410, end: 480 },
+		{ id: 11, start: 450, end: 590 },
+
+		{ id: 12, start: 500, end: 595 },
+		{ id: 13, start: 530, end: 590 },
+
+		// 3 ( 1 & 2, 2 & 3 colliding)
+		{ id: 14, start: 600, end: 660 },
+		{ id: 15, start: 650, end: 690 },
+		{ id: 16, start: 670, end: 710 }
+	]);
+</script>
